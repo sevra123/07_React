@@ -1,0 +1,44 @@
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+.dashboard-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.dashboard-header h1 {
+  margin-bottom: 8px;
+}
+.student-card,
+.tasks-card,
+.message-card,
+.summary-card {
+  background-color: #f5f7fb;
+  border: 1px solid #dce3f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.student-card h2,
+.tasks-card h2 {
+  margin-top: 0;
+}
+.success-message {
+  color: #176b3a;
+  font-weight: bold;
+}
+.warning-message {
+  color: #9a5b00;
+  font-weight: bold;
+}
+.info-message {
+  color: #2c4a7a;
+}
+.tasks-card ul {
+  padding-left: 20px;
+}
+.tasks-card li {
+  margin-bottom: 8px;
+}
