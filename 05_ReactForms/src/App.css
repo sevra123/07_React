@@ -1,3 +1,20 @@
+.input-error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+label {
+  display: block;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -167,7 +184,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;

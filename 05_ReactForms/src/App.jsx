@@ -1,5 +1,6 @@
 import TextInput from "./components/forms/TextInput";
 import ContactForm from "./components/forms/ContactForm";
+import RegistrationForm from "./components/RegistrationForm";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
       </form>
       <h2>Contact Form</h2>
       <ContactForm />
+      <h2>Registration Form</h2>
+      <RegistrationForm />
     </>
   );
 }
