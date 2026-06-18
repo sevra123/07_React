@@ -1,22 +1,21 @@
+const resourcesData = [
+  {
+    id: 1,
+    title: "Documentation",
+    description: "The official React documentation is your go-to guide...",
+  },
+  {
+    id: 2,
+    title: "Practice tasks",
+    description: "A curated collection of interactive coding challenges...",
+  },
+  {
+    id: 3,
+    title: "Cheat sheets",
+    description: "Quick reference guides covering JSX syntax...",
+  },
+];
 function Resources() {
-  const resourcesData = [
-    {
-      id: 1,
-      title: "Documentation",
-      description: "The official React documentation is your go-to guide...",
-    },
-    {
-      id: 2,
-      title: "Practice tasks",
-      description: "A curated collection of interactive coding challenges...",
-    },
-    {
-      id: 3,
-      title: "Cheat sheets",
-      description: "Quick reference guides covering JSX syntax...",
-    },
-  ];
-
   return (
     <section className="page">
       <h2>Learning Resources</h2>

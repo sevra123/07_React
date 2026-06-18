@@ -8,6 +8,7 @@ function RootLayout() {
         <nav className="navigation">
           <NavLink
             to="/"
+            end
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Home
