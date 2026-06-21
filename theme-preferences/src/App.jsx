@@ -6,13 +6,20 @@ function App() {
 
   const [name, setName] = useLocalStorage("name", "");
 
+  const [fontSize, setFontSize] = useLocalStorage("fontSize", "medium");
+  const getFontSizeStyle = () => {
+    if (fontSize === "small") return "14px";
+    if (fontSize === "large") return "22px";
+    return "18px";
+  };
+
   function toggleTheme() {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
   }
 
   return (
     <main className={`app ${theme === "dark" ? "dark" : "light"}`}>
-      <section className="panel">
+      <section className="panel" style={{ fontSize: getFontSizeStyle() }}>
         <p className="eyebrow">Custom Hooks Practice</p>
         <h1>Theme Preferences</h1>
         <p>
@@ -29,6 +36,18 @@ function App() {
             onChange={(e) => setName(e.target.value)}
             placeholder="Upišite ime"
           />
+        </div>
+        <div className="font">
+          <label htmlFor="fontSelect">Veličina fonta: </label>
+          <select
+            id="fontSelect"
+            value={fontSize}
+            onChange={(e) => setFontSize(e.target.value)}
+          >
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
         </div>
         <div className="theme-status">
           Current theme: <strong>{theme}</strong>
