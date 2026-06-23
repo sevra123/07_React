@@ -17,6 +17,11 @@ function App() {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
   }
 
+  function handleReset() {
+    setTheme("light");
+    setName("");
+    setFontSize("medium");
+  }
   return (
     <main className={`app ${theme === "dark" ? "dark" : "light"}`}>
       <section className="panel" style={{ fontSize: getFontSizeStyle() }}>
@@ -56,6 +61,7 @@ function App() {
         <button onClick={toggleTheme}>
           Switch to {theme === "light" ? "dark" : "light"} theme
         </button>
+        <button onClick={handleReset}>Reset preferences</button>
         <article className="preview-card">
           <h2>Preview Card</h2>
           <p>
