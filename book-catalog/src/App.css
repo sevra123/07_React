@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* --- Zaglavlje stranice (Page Header) --- */
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header .eyebrow {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-top: 0;
+  font-weight: 800;
+}
+/* --- Kontrole i Pretraga (Book Controls) --- */
+.book-controls {
+  max-width: 500px;
+  margin: 0 auto 40px auto; /* Centrira traku i odvaja je od mreže knjiga */
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Stil za sakrivanje labela (vizualno), ali ostaje dostupna za čitače ekrana (accessibility) */
+.control-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #495057;
+  display: none; /* Slobodno makni ovu liniju ako želiš da se tekst "Search books" vidi iznad inputa */
+}
+
+/* Glavni input za pretragu */
+.control-group input[type="text"] {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 30px; /* Zaobljeni rubovi za moderan izgled */
+  background-color: #ffffff;
+  color: #212529;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Efekt kada korisnik klikne unutar polja za pretragu (Focus) */
+.control-group input[type="text"]:focus {
+  border-color: #4f46e5; /* Moderna indigo/plava boja */
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15); /* Blago isijavanje oko inputa */
+}
+
+/* Stil za placeholder tekst unutar inputa */
+.control-group input[type="text"]::placeholder {
+  color: #adb5bd;
+  font-weight: 400;
+}
+/* --- Mreža za knjige (Books Grid) --- */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* --- Kartica knjige (Book Card) --- */
+.book-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efekt kada se mišem prijeđe preko kartice */
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Slika korice knjige */
+.cover-book-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover; /* Sprečava distorziju slike */
+  background-color: #e9ecef; /* Placeholder dok se slika učitava */
+}
+
+/* Unutarnji sadržaj kartice */
+.book-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.book-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Naslov knjige */
+.book-card-header h2 {
+  font-size: 1.25rem;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Autor */
+.book-card-header h3 {
+  font-size: 0.95rem;
+  margin: 0 0 8px 0;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Ocjena (Rating) */
+.rating {
+  background-color: #fef3c7;
+  color: #d97706;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Žanr, Godina i Stranice inline prikaz */
+.genre-year-pages {
+  font-size: 0.85rem;
+  color: #868e96;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+
+/* Dodaje točku (separator) između žanra, godine i stranica */
+.genre-year-pages span:not(:last-child)::after {
+  content: "•";
+  margin-left: 8px;
+  color: #adb5bd;
+}
+
+/* Opis knjige (gurnut na dno ako ima mjesta) */
+.description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-top: auto; /* Gura opis prema dnu kartice */
+  padding-top: 12px;
+}
+
+/* --- Ažurirani Book Controls (da drži pretragu i sortiranje skupa) --- */
+.book-controls {
+  max-width: 800px; /* Malo prošireno da stanu oba elementa */
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Kada je ekran širi (npr. tablet i računalo), pretraga i sortiranje idu jedno pokraj drugog */
+@media (min-width: 600px) {
+  .book-controls {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  /* Traka za pretragu zauzima više mjesta, a sortiranje manje */
+  .book-controls .control-group:first-child {
+    flex: 2;
+  }
+  .book-controls .control-group:last-child {
+    flex: 1;
+  }
+}
+
+/* --- Stilovi za Control Group & Select --- */
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #495057;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Stil za Input i Select (zajednička svojstva za uredan izgled) */
+.control-group input[type="text"],
+.control-group select {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #212529;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Custom izgled za select (maknut ćemo klasičnu strelicu i staviti moderniju ako želiš, 
+   ali i ovaj standardni padding radi super) */
+.control-group select {
+  appearance: none; /* Miče defaultni izgled operativnog sustava */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 45px; /* Prostor za strelicu na desnoj strani */
+}
+
+/* Focus efekti za oba polja */
+.control-group input[type="text"]:focus,
+.control-group select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+.results-count {
+  max-width: 1200px; /*prati širinu tvoje aplikacije*/
+  margin: 0 auto 20px auto;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6c757d;
+}

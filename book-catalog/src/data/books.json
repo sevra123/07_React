@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "The React Journey",
+    "author": "Laura Stevens",
+    "genre": "Programming",
+    "year": 2022,
+    "pages": 340,
+    "rating": 4.8,
+    "coverImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
+    "description": "A practical guide for learning React through examples, projects and reusable patterns."
+  },
+  {
+    "id": 2,
+    "title": "Clean Code Habits",
+    "author": "Marcus Lee",
+    "genre": "Software Engineering",
+    "year": 2019,
+    "pages": 280,
+    "rating": 4.6,
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "description": "A book about writing readable, maintainable and professional code in everyday projects."
+  },
+  {
+    "id": 3,
+    "title": "Design Systems Made Simple",
+    "author": "Nina Clarke",
+    "genre": "Design",
+    "year": 2021,
+    "pages": 310,
+    "rating": 4.7,
+    "coverImage": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+    "description": "Learn how teams create consistent user interfaces using components, rules and shared design language."
+  },
+  {
+    "id": 4,
+    "title": "JavaScript Deep Dive",
+    "author": "Ethan Brooks",
+    "genre": "Programming",
+    "year": 2020,
+    "pages": 520,
+    "rating": 4.9,
+    "coverImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "description": "A deeper look into JavaScript fundamentals, functions, objects, arrays, scope and asynchronous programming."
+  },
+  {
+    "id": 5,
+    "title": "The Productive Developer",
+    "author": "Sofia Martin",
+    "genre": "Productivity",
+    "year": 2018,
+    "pages": 240,
+    "rating": 4.4,
+    "coverImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80",
+    "description": "Practical advice for managing focus, planning work and improving your daily development workflow."
+  },
+  {
+    "id": 6,
+    "title": "Frontend Architecture",
+    "author": "Daniel Wright",
+    "genre": "Software Engineering",
+    "year": 2023,
+    "pages": 410,
+    "rating": 4.8,
+    "coverImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80",
+    "description": "A structured introduction to building scalable frontend applications with clear architecture."
+  },
+  {
+    "id": 7,
+    "title": "UX for Beginners",
+    "author": "Emily Carter",
+    "genre": "Design",
+    "year": 2017,
+    "pages": 220,
+    "rating": 4.3,
+    "coverImage": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80",
+    "description": "An accessible introduction to user experience, usability, research and interface thinking."
+  },
+  {
+    "id": 8,
+    "title": "Advanced CSS Layouts",
+    "author": "Oliver Stone",
+    "genre": "CSS",
+    "year": 2021,
+    "pages": 360,
+    "rating": 4.5,
+    "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+    "description": "Explore modern CSS layouts using flexbox, grid, responsive design and reusable styling strategies."
+  },
+  {
+    "id": 9,
+    "title": "Debugging Mindset",
+    "author": "Hannah Lewis",
+    "genre": "Programming",
+    "year": 2016,
+    "pages": 260,
+    "rating": 4.2,
+    "coverImage": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=900&q=80",
+    "description": "Learn how to approach bugs systematically and solve problems without guessing."
+  },
+  {
+    "id": 10,
+    "title": "APIs for Frontend Developers",
+    "author": "Noah Bennett",
+    "genre": "Web Development",
+    "year": 2022,
+    "pages": 330,
+    "rating": 4.7,
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80",
+    "description": "Understand APIs, requests, responses, JSON data and how frontend applications communicate with servers."
+  },
+  {
+    "id": 11,
+    "title": "Learning TypeScript",
+    "author": "Mia Thompson",
+    "genre": "Programming",
+    "year": 2024,
+    "pages": 390,
+    "rating": 4.8,
+    "coverImage": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=900&q=80",
+    "description": "A beginner-friendly guide to using TypeScript for safer and more maintainable JavaScript applications."
+  },
+  {
+    "id": 12,
+    "title": "Better Team Communication",
+    "author": "Lucas Reed",
+    "genre": "Soft Skills",
+    "year": 2019,
+    "pages": 210,
+    "rating": 4.1,
+    "coverImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+    "description": "Improve communication, feedback and collaboration in software teams."
+  }
+]
